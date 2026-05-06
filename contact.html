@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>اتصل بنا | SVU Life</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+<!-- ================= Navbar ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+                <img src="assets/img/logo.png" alt="SVU Life Logo" width="30" height="30" class="rounded-circle"> SVU
+                Life
+            </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">عن الموقع</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">اتصل بنا</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- ================= Contact Form ================= -->
+<div class="container my-5">
+
+    <h2 class="text-center mb-4">اتصل بنا</h2>
+
+    <!-- Success Alert -->
+    <div id="successMessage" class="alert alert-success text-center d-none">
+        تم إرسال الرسالة بنجاح ✅
+    </div>
+
+    <form id="contactForm">
+
+        <div class="mb-3">
+            <label class="form-label">الاسم</label>
+            <input type="text" class="form-control" id="name">
+            <small class="text-danger d-none" id="nameError">الرجاء إدخال الاسم</small>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control" id="email">
+            <small class="text-danger d-none" id="emailError">الرجاء إدخال بريد صحيح</small>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">الموضوع</label>
+            <input type="text" class="form-control" id="subject">
+            <small class="text-danger d-none" id="subjectError">الرجاء إدخال الموضوع</small>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">الرسالة</label>
+            <textarea class="form-control" rows="5" id="message"></textarea>
+            <small class="text-danger d-none" id="messageError">الرجاء إدخال الرسالة</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">إرسال</button>
+
+    </form>
+
+</div>
+
+<!-- ================= Footer ================= -->
+<footer class="text-center mt-5">
+    <div class="container">
+
+        <p>© 2026 SVU Life - جميع الحقوق محفوظة</p>
+
+        <div>
+            <a href="index.html">Facebook</a> |
+            <a href="index.html">Instagram</a> |
+            <a href="index.html">Twitter</a>
+        </div>
+
+    </div>
+    </footer>
+
+    <button onclick="scrollToTop()" id="topBtn" class="btn btn-primary">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+
+<!-- ================= Validation JS ================= -->
+<script>
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    let isValid = true;
+
+    // Inputs
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let subject = document.getElementById("subject");
+    let message = document.getElementById("message");
+
+    // Errors
+    let nameError = document.getElementById("nameError");
+    let emailError = document.getElementById("emailError");
+    let subjectError = document.getElementById("subjectError");
+    let messageError = document.getElementById("messageError");
+
+    // Reset
+    nameError.classList.add("d-none");
+    emailError.classList.add("d-none");
+    subjectError.classList.add("d-none");
+    messageError.classList.add("d-none");
+
+    // Name validation
+    if (name.value.trim() === "") {
+        nameError.classList.remove("d-none");
+        isValid = false;
+    }
+
+    // Email validation
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.value.match(emailPattern)) {
+        emailError.classList.remove("d-none");
+        isValid = false;
+    }
+
+    // Subject validation
+    if (subject.value.trim() === "") {
+        subjectError.classList.remove("d-none");
+        isValid = false;
+    }
+
+    // Message validation
+    if (message.value.trim() === "") {
+        messageError.classList.remove("d-none");
+        isValid = false;
+    }
+
+    // Success
+    if (isValid) {
+        document.getElementById("successMessage").classList.remove("d-none");
+        document.getElementById("contactForm").reset();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
