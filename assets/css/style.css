@@ -1,8 +1,19 @@
+html,
 body {
-    /* background-color: #649cd3 !important; */
-    font-family: 'Cairo', sans-serif;
+    height: 100%;
 }
 
+body {
+    background-color: #DDE3FD !important;
+    font-family: 'Cairo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #0A2299;
+}
 
 .hero-img {
     height: 400px;
@@ -10,7 +21,7 @@ body {
 }
 
 footer {
-    background: #1E3A8A;
+    background: #091034;
     color: white;
     padding: 20px 0;
 }
@@ -23,6 +34,16 @@ footer a {
 .card img {
     height: 200px;
     object-fit: cover;
+}
+
+.hov:hover {
+    transform: translate(0px, -20px);
+    box-shadow: 0px 20px 20px black;
+    transition: all 0.8s ease;
+}
+
+a {
+    text-decoration: none;
 }
 
 .main-img {
@@ -44,6 +65,19 @@ footer a {
     margin: 5px;
 }
 
+.card-about {
+    border: 1px solid #0A2299;
+    flex-grow: 3;
+}
+
+.card-about:hover {
+    transform: translate(0px, -20px);
+    box-shadow: 0px 20px 20px black;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+/* btn scrooll to top */
 #topBtn {
     position: fixed;
     bottom: 20px;

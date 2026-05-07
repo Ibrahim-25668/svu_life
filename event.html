@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
 
@@ -22,148 +24,810 @@
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
 
-        <a class="navbar-brand fw-bold" href="index.html">
+            <a class="navbar-brand fw-bold" href="index.html">
                 <img src="assets/img/logo.png" alt="SVU Life Logo" width="30" height="30" class="rounded-circle"> SVU
                 Life
             </a>
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
-                <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">عن الموقع</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">عن الموقع</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="flex-grow-1">
+
+        <!-- المعرض الثقافي البرمجي -->
+
+        <!-- Main Content -->
+        <div class="container my-5" id="culture_1">
+
+            <!-- Title -->
+            <h2 class="mb-3">المعرض الثقافي البرمجي</h2>
+
+            <!-- Info -->
+            <p class="text-muted"> 10 مايو 2026 | دمشق</p>
+
+            <!-- Main Image -->
+            <img src="assets/img/culture/f_event.jpg" class="img-fluid main-img mb-4">
+
+            <!-- Description -->
+            <p>
+                هذا المؤتمر يجمع المهتمين بمجال التكنولوجيا والبرمجة، ويتضمن ورشات عمل ومحاضرات
+                يقدمها خبراء في المجال، بالإضافة إلى فرص للتواصل وبناء علاقات مهنية.
+            </p>
+
+            <!-- Buttons -->
+            <div class="my-4">
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target=".calendarModal">
+                    أضف للتقويم
+                </button>
+
+                <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target=".shareModal">
+                    شارك
+                </button>
+            </div>
+
+            <!-- Gallery -->
+            <h4 class="mt-5 mb-3">معرض الصور</h4>
+
+            <div class="row gallery g-3">
+                <div class="col-md-3"><img src="assets/img/culture/s_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/culture/t_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/sport/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/family/s_event.jpg" class="img-fluid rounded"></div>
+            </div>
+
+            <!-- Map -->
+            <h4 class="mt-5 mb-3">الموقع</h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106456.53228346398!2d36.200494040288035!3d33.50744822524293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e6dc413cc6a7%3A0x6b9f66ebd1e394f2!2sDamascus%2C%20Syria!5e0!3m2!1sen!2sro!4v1778111507274!5m2!1sen!2sro"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </div>
 
-    </div>
-</nav>
+        <!-- Related Events -->
+        <div class="container my-5">
 
-<!-- Main Content -->
-<div class="container my-5">
+            <h4 class="mb-4">فعاليات ذات صلة</h4>
 
-    <!-- Title -->
-    <h2 class="mb-3">مؤتمر التكنولوجيا</h2>
+            <div class="row">
 
-    <!-- Info -->
-    <p class="text-muted">📅 10 مايو 2026 | 📍 دمشق</p>
-
-    <!-- Main Image -->
-    <img src="assets/img/logo.png" class="img-fluid main-img mb-4">
-
-    <!-- Description -->
-    <p>
-        هذا المؤتمر يجمع المهتمين بمجال التكنولوجيا والبرمجة، ويتضمن ورشات عمل ومحاضرات 
-        يقدمها خبراء في المجال، بالإضافة إلى فرص للتواصل وبناء علاقات مهنية.
-    </p>
-
-    <!-- Buttons -->
-    <div class="my-4">
-        <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#calendarModal">
-            أضف للتقويم
-        </button>
-
-        <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#shareModal">
-            شارك
-        </button>
-    </div>
-
-    <!-- Gallery -->
-    <h4 class="mt-5 mb-3">معرض الصور</h4>
-
-    <div class="row gallery g-3">
-        <div class="col-md-3"><img src="assets/img/logo.png" class="img-fluid rounded"></div>
-        <div class="col-md-3"><img src="assets/img/logo.png" class="img-fluid rounded"></div>
-        <div class="col-md-3"><img src="assets/img/logo.png" class="img-fluid rounded"></div>
-        <div class="col-md-3"><img src="assets/img/logo.png" class="img-fluid rounded"></div>
-    </div>
-
-    <!-- Map -->
-    <h4 class="mt-5 mb-3">الموقع</h4>
-
-    <img src="assets/img/logo.png" class="img-fluid rounded">
-
-</div>
-
-<!-- Related Events -->
-<div class="container my-5">
-
-    <h4 class="mb-4">فعاليات ذات صلة</h4>
-
-    <div class="row">
-
-        <div class="col-md-4 mb-3">
-            <div class="card">
-                <img src="assets/img/logo.png">
-                <div class="card-body">
-                    <h5>ورشة برمجة</h5>
-                    <a href="event.html" class="btn btn-primary btn-sm">عرض</a>
+                <div class="col-md-4 mb-4 event-card culture" data-date="2026-05-23" data-location="latakia">
+                    <div class="card h-100">
+                        <img src="assets/img/culture/s_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5> جلسة تعريفية بالذكاء الاصطناعي</h5>
+                            <p>23 مايو - اللاذقية</p>
+                            <p>فعالية ثقافية مميزة</p>
+                            <a href="event.html#culture_2" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-md-4 mb-4 event-card culture" data-date="2026-05-13" data-location="damascus">
+                    <div class="card h-100">
+                        <img src="assets/img/culture/t_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5> ورشة عمل في التكنولوجيا</h5>
+                            <p>13 مايو - دمشق</p>
+                            <p>فعالية ثقافية مميزة</p>
+                            <a href="event.html#culture_3" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================================================================== -->
+
+        <hr class="bg-dark" style="height: 2px;">
+
+        <!-- المسابقة البرمجية -->
+
+        <!-- Main Content -->
+        <div class="container my-5" id="sport_1">
+
+            <!-- Title -->
+            <h2 class="mb-3">المسابقة البرمجية</h2>
+
+            <!-- Info -->
+            <p class="text-muted"> 15 مايو - حلب</p>
+
+            <!-- Main Image -->
+            <img src="assets/img/sport/f_event.jpg" class="img-fluid main-img mb-4">
+
+            <!-- Description -->
+            <p>
+                هذا المؤتمر يجمع المهتمين بمجال التكنولوجيا والبرمجة، ويتضمن ورشات عمل ومحاضرات
+                يقدمها خبراء في المجال، بالإضافة إلى فرص للتواصل وبناء علاقات مهنية.
+            </p>
+
+            <!-- Buttons -->
+            <div class="my-4">
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target=".calendarModal">
+                    أضف للتقويم
+                </button>
+
+                <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target=".shareModal">
+                    شارك
+                </button>
+            </div>
+
+            <!-- Gallery -->
+            <h4 class="mt-5 mb-3">معرض الصور</h4>
+
+            <div class="row gallery g-3">
+                <div class="col-md-3"><img src="assets/img/sport/s_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/culture/s_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/art/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/family/s_event.jpg" class="img-fluid rounded"></div>
+            </div>
+
+            <!-- Map -->
+            <h4 class="mt-5 mb-3">الموقع</h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103019.56928218326!2d37.06618382147203!3d36.206406407959456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152ff813b98135af%3A0x967e5e5fc542c32a!2sAleppo%2C%20Syria!5e0!3m2!1sen!2sro!4v1778111694851!5m2!1sen!2sro"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- Related Events -->
+        <div class="container my-5">
+
+            <h4 class="mb-4">فعاليات ذات صلة</h4>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4 event-card sports" data-date="2026-05-18" data-location="hama">
+                    <div class="card h-100">
+                        <img src="assets/img/sport/s_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5> مسابقة في العاب VR</h5>
+                            <p>18 مايو - حما</p>
+                            <p>منافسة رياضية</p>
+                            <a href="event.html#sport_2" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================================================================== -->
+
+        <hr class="bg-dark" style="height: 2px;">
+
+        <!-- جلسة تعريفية بالذكاء الاصطناعي -->
+
+        <!-- Main Content -->
+        <div class="container my-5" id="culture_2">
+
+            <!-- Title -->
+            <h2 class="mb-3">جلسة تعريفية بالذكاء الاصطناعي</h2>
+
+            <!-- Info -->
+            <p class="text-muted"> 23 مايو - اللاذقية</p>
+
+            <!-- Main Image -->
+            <img src="assets/img/culture/s_event.jpg" class="img-fluid main-img mb-4">
+
+            <!-- Description -->
+            <p>
+                هذا المؤتمر يجمع المهتمين بمجال التكنولوجيا والبرمجة، ويتضمن ورشات عمل ومحاضرات
+                يقدمها خبراء في المجال، بالإضافة إلى فرص للتواصل وبناء علاقات مهنية.
+            </p>
+
+            <!-- Buttons -->
+            <div class="my-4">
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target=".calendarModal">
+                    أضف للتقويم
+                </button>
+
+                <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target=".shareModal">
+                    شارك
+                </button>
+            </div>
+
+            <!-- Gallery -->
+            <h4 class="mt-5 mb-3">معرض الصور</h4>
+
+            <div class="row gallery g-3">
+                <div class="col-md-3"><img src="assets/img/culture/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/culture/t_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/sport/s_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/art/s_event.jpg" class="img-fluid rounded"></div>
+            </div>
+
+            <!-- Map -->
+            <h4 class="mt-5 mb-3">الموقع</h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103885.19386428468!2d35.70961478844408!3d35.54351812261926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1526ac2d61d4607d%3A0x8e325bf8a14195de!2sLatakia%2C%20Syria!5e0!3m2!1sen!2sro!4v1778111844084!5m2!1sen!2sro"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Related Events -->
+        <div class="container my-5">
+
+            <h4 class="mb-4">فعاليات ذات صلة</h4>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4 event-card culture" data-date="2026-05-10" data-location="damascus">
+                    <div class="card h-100">
+                        <img src="assets/img/culture/f_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5> المعرض الثقافي البرمجي</h5>
+                            <p>10 مايو - دمشق</p>
+                            <p>فعالية ثقافية مميزة</p>
+                            <a href="event.html#3culture_1" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 event-card culture" data-date="2026-05-13" data-location="damascus">
+                    <div class="card h-100">
+                        <img src="assets/img/culture/t_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5> ورشة عمل في التكنولوجيا</h5>
+                            <p>13 مايو - دمشق</p>
+                            <p>فعالية ثقافية مميزة</p>
+                            <a href="event.html#culture_3" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================================================================== -->
+
+        <hr class="bg-dark" style="height: 2px;">
+
+        <!-- حفلة تخرج طلاب الهندسة -->
+
+        <!-- Main Content -->
+        <div class="container my-5" id="art_1">
+
+            <!-- Title -->
+            <h2 class="mb-3">حفلة تخرج طلاب الهندسة</h2>
+
+            <!-- Info -->
+            <p class="text-muted"> 20 مايو - حمص</p>
+
+            <!-- Main Image -->
+            <img src="assets/img/art/f_event.jpg" class="img-fluid main-img mb-4">
+
+            <!-- Description -->
+            <p>
+                هذا المؤتمر يجمع المهتمين بمجال التكنولوجيا والبرمجة، ويتضمن ورشات عمل ومحاضرات
+                يقدمها خبراء في المجال، بالإضافة إلى فرص للتواصل وبناء علاقات مهنية.
+            </p>
+
+            <!-- Buttons -->
+            <div class="my-4">
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target=".calendarModal">
+                    أضف للتقويم
+                </button>
+
+                <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target=".shareModal">
+                    شارك
+                </button>
+            </div>
+
+            <!-- Gallery -->
+            <h4 class="mt-5 mb-3">معرض الصور</h4>
+
+            <div class="row gallery g-3">
+                <div class="col-md-3"><img src="assets/img/family/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/art/s_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/culture/t_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/sport/f_event.jpg" class="img-fluid rounded"></div>
+            </div>
+
+            <!-- Map -->
+            <h4 class="mt-5 mb-3">الموقع</h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104928.15795750252!2d36.59468074863927!3d34.730269956455125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15230e9047c7c0fb%3A0xac367e06303788d0!2zSG9tc-KAjiwgU3lyaWE!5e0!3m2!1sen!2sro!4v1778111909853!5m2!1sen!2sro"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Related Events -->
+        <div class="container my-5">
+
+            <h4 class="mb-4">فعاليات ذات صلة</h4>
+
+            <div class="row">
+
+
+                <div class="col-md-4 mb-4 event-card art" data-date="2026-05-21" data-location="idlib">
+                    <div class="card h-100">
+                        <img src="assets/img/art/s_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>حفلة تصدر الاولمبيات</h5>
+                            <p>21 مايو - إدلب</p>
+                            <p>أمسية فنية رائعة</p>
+                            <a href="event.html#art_2" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================================================================== -->
+
+        <hr class="bg-dark" style="height: 2px;">
+
+        <!-- مسابقة في العاب VR -->
+
+        <!-- Main Content -->
+        <div class="container my-5" id="sport_2">
+
+            <!-- Title -->
+            <h2 class="mb-3">مسابقة في العاب VR</h2>
+
+            <!-- Info -->
+            <p class="text-muted"> 18 مايو - حما</p>
+
+            <!-- Main Image -->
+            <img src="assets/img/sport/s_event.jpg" class="img-fluid main-img mb-4">
+
+            <!-- Description -->
+            <p>
+                هذا المؤتمر يجمع المهتمين بمجال التكنولوجيا والبرمجة، ويتضمن ورشات عمل ومحاضرات
+                يقدمها خبراء في المجال، بالإضافة إلى فرص للتواصل وبناء علاقات مهنية.
+            </p>
+
+            <!-- Buttons -->
+            <div class="my-4">
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target=".calendarModal">
+                    أضف للتقويم
+                </button>
+
+                <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target=".shareModal">
+                    شارك
+                </button>
+            </div>
+
+            <!-- Gallery -->
+            <h4 class="mt-5 mb-3">معرض الصور</h4>
+
+            <div class="row gallery g-3">
+                <div class="col-md-3"><img src="assets/img/sport/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/culture/t_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/family/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/art/f_event.jpg" class="img-fluid rounded"></div>
+            </div>
+
+            <!-- Map -->
+            <h4 class="mt-5 mb-3">الموقع</h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104409.69661852636!2d36.59451421248946!3d35.13658888059384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1524828fcdd5b865%3A0x62d43f56ee62b5ef!2sHama%2C%20Syria!5e0!3m2!1sen!2sro!4v1778112109112!5m2!1sen!2sro"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- Related Events -->
+        <div class="container my-5">
+
+            <h4 class="mb-4">فعاليات ذات صلة</h4>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4 event-card sports" data-date="2026-05-15" data-location="aleppo">
+                    <div class="card h-100">
+                        <img src="assets/img/sport/f_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5> المسابقة البرمجية </h5>
+                            <p>15 مايو - حلب</p>
+                            <p>منافسة رياضية</p>
+                            <a href="event.html#sport_1" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================================================================== -->
+
+        <hr class="bg-dark" style="height: 2px;">
+
+        <!-- ملتقى المعرفة العائلي -->
+
+        <!-- Main Content -->
+        <div class="container my-5" id="family_1">
+
+            <!-- Title -->
+            <h2 class="mb-3">ملتقى المعرفة العائلي</h2>
+
+            <!-- Info -->
+            <p class="text-muted"> 25 مايو - طرطوس</p>
+
+            <!-- Main Image -->
+            <img src="assets/img/family/f_event.jpg" class="img-fluid main-img mb-4">
+
+            <!-- Description -->
+            <p>
+                هذا المؤتمر يجمع المهتمين بمجال التكنولوجيا والبرمجة، ويتضمن ورشات عمل ومحاضرات
+                يقدمها خبراء في المجال، بالإضافة إلى فرص للتواصل وبناء علاقات مهنية.
+            </p>
+
+            <!-- Buttons -->
+            <div class="my-4">
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target=".calendarModal">
+                    أضف للتقويم
+                </button>
+
+                <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target=".shareModal">
+                    شارك
+                </button>
+            </div>
+
+            <!-- Gallery -->
+            <h4 class="mt-5 mb-3">معرض الصور</h4>
+
+            <div class="row gallery g-3">
+                <div class="col-md-3"><img src="assets/img/art/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/family/s_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/culture/t_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/sport/f_event.jpg" class="img-fluid rounded"></div>
+            </div>
+
+            <!-- Map -->
+            <h4 class="mt-5 mb-3">الموقع</h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52365.03336779845!2d35.841491298927586!3d34.88600200042134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15217e77890fb9a3%3A0xa072a491096e24b!2zVGFydHVz4oCOLCBTeXJpYQ!5e0!3m2!1sen!2sro!4v1778112246149!5m2!1sen!2sro"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- Related Events -->
+        <div class="container my-5">
+
+            <h4 class="mb-4">فعاليات ذات صلة</h4>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4 event-card family" data-date="2026-05-29" data-location="al_raqqa">
+                    <div class="card h-100">
+                        <img src="assets/img/family/s_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>مؤتمر التكنولوجيا للعائلات</h5>
+                            <p>29 مايو - الرقة</p>
+                            <p>فعالية لجميع الأعمار</p>
+                            <a href="event.html#family_2" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================================================================== -->
+
+        <hr class="bg-dark" style="height: 2px;">
+
+        <!-- حفلة تصدر الاولمبيات -->
+
+        <!-- Main Content -->
+        <div class="container my-5" id="art_2">
+
+            <!-- Title -->
+            <h2 class="mb-3">حفلة تصدر الاولمبيات</h2>
+
+            <!-- Info -->
+            <p class="text-muted"> 21 مايو - إدلب</p>
+
+            <!-- Main Image -->
+            <img src="assets/img/art/s_event.jpg" class="img-fluid main-img mb-4">
+
+            <!-- Description -->
+            <p>
+                هذا المؤتمر يجمع المهتمين بمجال التكنولوجيا والبرمجة، ويتضمن ورشات عمل ومحاضرات
+                يقدمها خبراء في المجال، بالإضافة إلى فرص للتواصل وبناء علاقات مهنية.
+            </p>
+
+            <!-- Buttons -->
+            <div class="my-4">
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target=".calendarModal">
+                    أضف للتقويم
+                </button>
+
+                <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target=".shareModal">
+                    شارك
+                </button>
+            </div>
+
+            <!-- Gallery -->
+            <h4 class="mt-5 mb-3">معرض الصور</h4>
+
+            <div class="row gallery g-3">
+                <div class="col-md-3"><img src="assets/img/art/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/family/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/culture/t_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/sport/s_event.jpg" class="img-fluid rounded"></div>
+            </div>
+
+            <!-- Map -->
+            <h4 class="mt-5 mb-3">الموقع</h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25846.65349631929!2d36.61496879526398!3d35.926619640543784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152508664354cbdf%3A0xc44836a7b49c636f!2sIdlib%2C%20Syria!5e0!3m2!1sen!2sro!4v1778112415854!5m2!1sen!2sro"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- Related Events -->
+        <div class="container my-5">
+
+            <h4 class="mb-4">فعاليات ذات صلة</h4>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4 event-card art" data-date="2026-05-20" data-location="homs">
+                    <div class="card h-100">
+                        <img src="assets/img/art/f_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5> حفلة تخرج طلاب الهندسة</h5>
+                            <p>20 مايو - حمص</p>
+                            <p>أمسية فنية رائعة</p>
+                            <a href="event.html#art_1" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================================================================== -->
+
+        <hr class="bg-dark" style="height: 2px;">
+
+        <!-- مؤتمر التكنولوجيا للعائلات -->
+
+        <!-- Main Content -->
+        <div class="container my-5" id="family_2">
+
+            <!-- Title -->
+            <h2 class="mb-3">مؤتمر التكنولوجيا للعائلات</h2>
+
+            <!-- Info -->
+            <p class="text-muted"> 29 مايو - الرقة</p>
+
+            <!-- Main Image -->
+            <img src="assets/img/family/s_event.jpg" class="img-fluid main-img mb-4">
+
+            <!-- Description -->
+            <p>
+                هذا المؤتمر يجمع المهتمين بمجال التكنولوجيا والبرمجة، ويتضمن ورشات عمل ومحاضرات
+                يقدمها خبراء في المجال، بالإضافة إلى فرص للتواصل وبناء علاقات مهنية.
+            </p>
+
+            <!-- Buttons -->
+            <div class="my-4">
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target=".calendarModal">
+                    أضف للتقويم
+                </button>
+
+                <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target=".shareModal">
+                    شارك
+                </button>
+            </div>
+
+            <!-- Gallery -->
+            <h4 class="mt-5 mb-3">معرض الصور</h4>
+
+            <div class="row gallery g-3">
+                <div class="col-md-3"><img src="assets/img/family/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/culture/t_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/art/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/sport/f_event.jpg" class="img-fluid rounded"></div>
+            </div>
+
+            <!-- Map -->
+            <h4 class="mt-5 mb-3">الموقع</h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51674.92884574665!2d38.95588776190633!3d35.954722609751464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x153719cb01b7b5fb%3A0xc8bdaf18cf35cfe3!2sAr%20Raqqah%2C%20Syria!5e0!3m2!1sen!2sro!4v1778112482573!5m2!1sen!2sro"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- Related Events -->
+        <div class="container my-5">
+
+            <h4 class="mb-4">فعاليات ذات صلة</h4>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4 event-card family" data-date="2026-05-25" data-location="tartous">
+                    <div class="card h-100">
+                        <img src="assets/img/family/f_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5> ملتقى المعرفة العائلي</h5>
+                            <p>25 مايو - طرطوس</p>
+                            <p>فعالية لجميع الأعمار</p>
+                            <a href="event.html#family_1" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================================================================== -->
+
+        <hr class="bg-dark" style="height: 2px;">
+
+        <!-- ورشة عمل في التكنولوجيا -->
+
+        <!-- Main Content -->
+        <div class="container my-5" id="culture_3">
+
+            <!-- Title -->
+            <h2 class="mb-3">ورشة عمل في التكنولوجيا</h2>
+
+            <!-- Info -->
+            <p class="text-muted"> 13 مايو - دمشق</p>
+
+            <!-- Main Image -->
+            <img src="assets/img/culture/t_event.jpg" class="img-fluid main-img mb-4">
+
+            <!-- Description -->
+            <p>
+                هذا المؤتمر يجمع المهتمين بمجال التكنولوجيا والبرمجة، ويتضمن ورشات عمل ومحاضرات
+                يقدمها خبراء في المجال، بالإضافة إلى فرص للتواصل وبناء علاقات مهنية.
+            </p>
+
+            <!-- Buttons -->
+            <div class="my-4">
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target=".calendarModal">
+                    أضف للتقويم
+                </button>
+
+                <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target=".shareModal">
+                    شارك
+                </button>
+            </div>
+
+            <!-- Gallery -->
+            <h4 class="mt-5 mb-3">معرض الصور</h4>
+
+            <div class="row gallery g-3">
+                <div class="col-md-3"><img src="assets/img/sport/s_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/art/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/family/f_event.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/art/s_event.jpg" class="img-fluid rounded"></div>
+            </div>
+
+            <!-- Map -->
+            <h4 class="mt-5 mb-3">الموقع</h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106456.61882322672!2d36.12700018326759!3d33.50737787576883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e6dc413cc6a7%3A0x6b9f66ebd1e394f2!2sDamascus%2C%20Syria!5e0!3m2!1sen!2sro!4v1778112636934!5m2!1sen!2sro"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- Related Events -->
+        <div class="container my-5">
+
+            <h4 class="mb-4">فعاليات ذات صلة</h4>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4 event-card culture" data-date="2026-05-10" data-location="damascus">
+                    <div class="card h-100">
+                        <img src="assets/img/culture/f_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5> المعرض الثقافي البرمجي</h5>
+                            <p>10 مايو - دمشق</p>
+                            <p>فعالية ثقافية مميزة</p>
+                            <a href="event.html#3culture_1" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 event-card culture" data-date="2026-05-23" data-location="latakia">
+                    <div class="card h-100">
+                        <img src="assets/img/culture/s_event.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5> جلسة تعريفية بالذكاء الاصطناعي</h5>
+                            <p>23 مايو - اللاذقية</p>
+                            <p>فعالية ثقافية مميزة</p>
+                            <a href="event.html#culture_2" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <div class="container">
+            <p>&copy; 2026 SVU Life - جميع الحقوق محفوظة</p>
+            <div>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
             </div>
         </div>
-
-        <div class="col-md-4 mb-3">
-            <div class="card">
-                <img src="assets/img/logo.png">
-                <div class="card-body">
-                    <h5>ندوة تقنية</h5>
-                    <a href="event.html" class="btn btn-primary btn-sm">عرض</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Footer -->
-<footer class="text-center mt-5">
-    <div class="container">
-        <p>© 2026 SVU Life - جميع الحقوق محفوظة</p>
-        <div>
-            <a href="index.html">Facebook</a> |
-            <a href="index.html">Instagram</a> |
-            <a href="index.html">Twitter</a>
-        </div>
-    </div>
     </footer>
 
     <button onclick="scrollToTop()" id="topBtn" class="btn btn-primary">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-<!-- Modals -->
+    <!-- Modals -->
 
-<!-- Calendar Modal -->
-<div class="modal fade" id="calendarModal">
-    <div class="modal-dialog">
-        <div class="modal-content text-center p-4">
-            <h5>تمت الإضافة للتقويم بنجاح ✅</h5>
+    <!-- Calendar Modal -->
+    <div class="modal fade calendarModal">
+        <div class="modal-dialog">
+            <div class="modal-content text-center text-success p-4">
+                <h5>تمت الإضافة للتقويم بنجاح </h5>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Share Modal -->
-<div class="modal fade" id="shareModal">
-    <div class="modal-dialog">
-        <div class="modal-content text-center p-4">
-            <h5>تمت مشاركة الفعالية ✅</h5>
+    <!-- Share Modal -->
+    <div class="modal fade shareModal">
+        <div class="modal-dialog">
+            <div class="modal-content text-center text-info p-4">
+                <h5>تمت مشاركة الفعالية </h5>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- JS -->
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

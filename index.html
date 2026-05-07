@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Google Font -->
+
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
 
-    <style>
+    <style></style>
 
-    </style>
 </head>
 
 <body>
 
-    <!-- ================= Navbar ================= -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
 
             <a class="navbar-brand fw-bold" href="index.html">
@@ -50,115 +50,170 @@
         </div>
     </nav>
 
-    <!-- ================= Slider ================= -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <main class="flex-grow-1">
 
-        <div class="carousel-inner">
+        <!-- Section 1 -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
 
-            <div class="carousel-item active">
-                <img src="assets/img/logo.png" class="d-block w-100 hero-img">
-                <div class="carousel-caption">
-                    <h3>مؤتمر التكنولوجيا</h3>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="assets/img/sport/f_event.jpg" class="d-block w-100 hero-img">
+                    <div class="carousel-caption">
+                        <h3> المسابقة البرمجية</h3>
+                    </div>
                 </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/culture/f_event.jpg" class="d-block w-100 hero-img">
+                    <div class="carousel-caption">
+                        <h3> المعرض الثقافي البرمجي</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/family/f_event.jpg" class="d-block w-100 hero-img">
+                    <div class="carousel-caption">
+                        <h3> ملتقى المعرفة العائلي</h3>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="carousel-item">
-                <img src="assets/img/logo.png" class="d-block w-100 hero-img">
-                <div class="carousel-caption">
-                    <h3>حفلة موسيقية</h3>
-                </div>
-            </div>
+            <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
 
-            <div class="carousel-item">
-                <img src="assets/img/logo.png" class="d-block w-100 hero-img">
-                <div class="carousel-caption">
-                    <h3>بطولة رياضية</h3>
-                </div>
-            </div>
+            <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
 
         </div>
 
-        <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
+        <div class="d-flex justify-content-around my-4 flex-wrap">
+            <p class="fw-bold fs-5 border shadow p-2">leen_215359</p>
+            <p class="fw-bold fs-5 border shadow p-2">fatima_291917</p>
+            <p class="fw-bold fs-5 border shadow p-2">ahmed_287911</p>
+            <p class="fw-bold fs-5 border shadow p-2">ezz_aldeen_295797</p>
+            <p class="fw-bold fs-5 border shadow p-2">Ali_199129</p>
+        </div>
 
-        <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+        <!-- Section 2 -->
+        <div class="container text-center my-5">
+            <h4 class="mb-3">التصنيفات</h4>
 
-    </div>
+            <button class="btn btn-outline-primary category-btn" onclick="indexCategory('all')">الكل</button>
+            <button class="btn btn-outline-primary category-btn" onclick="indexCategory('culture')">ثقافة</button>
+            <button class="btn btn-outline-primary category-btn" onclick="indexCategory('sports')">رياضة</button>
+            <button class="btn btn-outline-primary category-btn" onclick="indexCategory('art')">فن</button>
+            <button class="btn btn-outline-primary category-btn" onclick="indexCategory('family')">عائلي</button>
+        </div>
 
-    <!-- ================= Categories ================= -->
-    <div class="container text-center my-5">
-        <h4 class="mb-3">التصنيفات</h4>
+        <!-- Section 3 -->
+        <div class="container">
+            <h4 class="text-center mb-4">أحدث الفعاليات</h4>
 
-        <button class="btn btn-outline-primary category-btn" onclick="filterEvents('all')">الكل</button>
-        <button class="btn btn-outline-primary category-btn" onclick="filterEvents('culture')">ثقافة</button>
-        <button class="btn btn-outline-primary category-btn" onclick="filterEvents('sports')">رياضة</button>
-        <button class="btn btn-outline-primary category-btn" onclick="filterEvents('music')">موسيقى</button>
-        <button class="btn btn-outline-primary category-btn" onclick="filterEvents('family')">عائلي</button>
-    </div>
+            <div class="row">
 
-    <!-- ================= Events ================= -->
-    <div class="container">
-        <h4 class="text-center mb-4">أحدث الفعاليات</h4>
+                <!-- Event -->
 
-        <div class="row" id="eventsContainer">
 
-            <!-- Event -->
-            <div class="col-md-4 mb-4 event-card culture">
-                <div class="card">
-                    <img src="assets/img/logo.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5>معرض ثقافي</h5>
-                        <p>فعالية ثقافية مميزة</p>
-                    </div>
+                <div class="col-md-4 mb-4 event-card culture">
+                    <a href="event.html">
+                        <div class="card hov">
+                            <img src="assets/img/culture/s_event.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5> جلسة تعريفية بالذكاء الاصطناعي</h5>
+                                <p>جلسة ثقافية مميزة</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-md-4 mb-4 event-card sports">
+                    <a href="event.html">
+                        <div class="card hov">
+                            <img src="assets/img/sport/s_event.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5> مسابقة في العاب VR</h5>
+                                <p>منافسة رياضية</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-md-4 mb-4 event-card culture">
+                    <a href="event.html">
+                        <div class="card hov">
+                            <img src="assets/img/culture/f_event.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5> المعرض الثقافي البرمجي</h5>
+                                <p>فعالية ثقافية مثيرة</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-md-4 mb-4 event-card art">
+                    <a href="event.html">
+                        <div class="card hov">
+                            <img src="assets/img/art/f_event.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5> حفلة تخرج طلاب الهندسة</h5>
+                                <p>أمسية فنية رائعة</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-md-4 mb-4 event-card family">
+                    <a href="event.html">
+                        <div class="card hov">
+                            <img src="assets/img/family/f_event.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5> ملتقى المعرفة العائلي</h5>
+                                <p>فعالية عائلية مميزة</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-md-4 mb-4 event-card sports">
+                    <a href="event.html">
+                        <div class="card hov">
+                            <img src="assets/img/sport/f_event.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5>بطولة العالم الرقمي </h5>
+                                <p>بطولة عالمية بالالعاب الالكترونية </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
-            <div class="col-md-4 mb-4 event-card sports">
-                <div class="card">
-                    <img src="assets/img/logo.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5>بطولة كرة قدم</h5>
-                        <p>منافسة رياضية</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4 event-card music">
-                <div class="card">
-                    <img src="assets/img/logo.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5>حفلة موسيقية</h5>
-                        <p>أمسية فنية رائعة</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4 event-card family">
-                <div class="card">
-                    <img src="assets/img/logo.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5>نشاط عائلي</h5>
-                        <p>فعالية لجميع الأعمار</p>
-                    </div>
-                </div>
-            </div>
 
         </div>
-    </div>
 
-    <!-- ================= Footer ================= -->
+    </main>
+    <!-- Footer -->
     <footer class="text-center mt-5">
         <div class="container">
 
-            <p>© 2026 SVU Life - جميع الحقوق محفوظة</p>
+            <p>&copy; 2026 SVU Life - جميع الحقوق محفوظة</p>
 
             <div>
-                <a href="index.html">Facebook</a> |
-                <a href="index.html">Instagram</a> |
-                <a href="index.html">Twitter</a>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
             </div>
 
         </div>
@@ -171,27 +226,13 @@
     </button>
 
 
-    <!-- ================= JS ================= -->
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/main.js"></script>
 
     <script>
-        function filterEvents(category) {
-            let cards = document.querySelectorAll('.event-card');
 
-            cards.forEach(card => {
-                if (category === 'all') {
-                    card.style.display = 'block';
-                } else {
-                    if (card.classList.contains(category)) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                }
-            });
-        }
     </script>
 
 </body>
